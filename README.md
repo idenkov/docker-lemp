@@ -1,6 +1,6 @@
 # LEMP Dockerized - 1rw
 
-> Dockerized PHP development stack: Nginx, PHP-FPM on one image(currently building from dockerfile) and PHP-FPM and Redis images
+> Dockerized PHP development stack: Nginx, PHP-FPM on one image(currently building from dockerfile) and PHP-FPM and Redis images. Initiallt for running Magento, but should be able to run any other php/mysql software.
 
 
 ## Requirements
@@ -21,7 +21,7 @@ $ docker-compose up
 
 * SQL - At first start the Percona container will take any .sql.gz files and import into the default DB specified in docker-compose.yml
 * logs - Access and error logs from nginx
-* conf - Configuration for the different services, links/cpy/volumes defined ind dockerfile and docker-compose.yml
-* sites - nginx sites/vhosts config, currently lb was just for testing
+* conf - Configuration for the different services, links/copy/volumes defined in dockerfile and docker-compose.yml
+* sites - nginx sites/vhosts config, currently lb was just for testing.
 * www - web root
 
